@@ -133,9 +133,7 @@
         default:
             break;
     }
-    
-    //4
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         switch (self.direction) {
             case PVCDirectionCenter:
             {
@@ -168,9 +166,47 @@
         }
         alphaView.alpha = self.presentation?0.2:0;
     } completion:^(BOOL finished) {
-        //5
         [transitionContext completeTransition:YES];
+
     }];
+    
+//    //4
+//    [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
+//        switch (self.direction) {
+//            case PVCDirectionCenter:
+//            {
+//                animationView.frame = self.presentation?finalRect:CGRectOffset(finalRect, 0,[UIScreen mainScreen].bounds.size.height-final_Y);
+//            }
+//                break;
+//            case PVCDirectionTop:
+//            {
+//                animationView.frame = self.presentation?finalRect:CGRectOffset(finalRect, 0,finalSize.height*(-1));
+//            }
+//                break;
+//            case PVCDirectionLeft:
+//            {
+//                animationView.frame = self.presentation?finalRect:CGRectOffset(finalRect, finalSize.width*(-1),0);
+//            }
+//                break;
+//            case PVCDirectionRight:
+//            {
+//                animationView.frame = self.presentation?finalRect:CGRectOffset(finalRect, finalSize.width,0);
+//            }
+//                break;
+//            case PVCDirectionBottom:
+//            {
+//                animationView.frame = self.presentation?finalRect:CGRectOffset(finalRect, 0, finalSize.height);
+//            }
+//                break;
+//
+//            default:
+//                break;
+//        }
+//        alphaView.alpha = self.presentation?0.2:0;
+//    } completion:^(BOOL finished) {
+//        //5
+//        [transitionContext completeTransition:YES];
+//    }];
 }
 
 @end
