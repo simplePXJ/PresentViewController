@@ -35,7 +35,7 @@
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext;
 {
-    return 0.5;
+    return 0.3;
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
@@ -133,7 +133,13 @@
         default:
             break;
     }
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+
+    [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+//    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+
+
+//    [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0 usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
         switch (self.direction) {
             case PVCDirectionCenter:
             {

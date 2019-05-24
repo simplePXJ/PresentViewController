@@ -15,8 +15,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            landmarkName = "-changePresent:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController changePresent:]"
+                  moduleName = "PresentViewController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/PXJ/Desktop/PresentViewController/PresentViewController/ViewController.m"
+                  timestampString = "580389904.0787261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__32-[ViewController changePresent:]_block_invoke"
+                  moduleName = "PresentViewController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/PXJ/Desktop/PresentViewController/PresentViewController/ViewController.m"
+                  timestampString = "580389904.081382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PresentViewController/PastyPresent/UIViewController+PVCMotal.m"
-            timestampString = "577765788.0446579"
+            timestampString = "580389943.092133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -58,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PresentViewController/PastyPresent/UIViewController+PVCMotal.m"
-            timestampString = "577765788.0451421"
+            timestampString = "580389943.0921921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"

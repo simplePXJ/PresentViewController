@@ -41,29 +41,40 @@
 //}
 - (IBAction)changePresent:(UIButton* )sender {
     PVCDirection direction = sender.tag-10;
-    
     CGSize prentSize = CGSizeZero;
     switch (direction) {
         case PVCDirectionCenter:
+        {
             prentSize = CGSizeMake(300, 400);
+        }
             break;
         case PVCDirectionLeft:
+        {
             prentSize = CGSizeMake(300, 467);
+        }
             break;
         case PVCDirectionRight:
+        {
             prentSize = CGSizeMake(300, 467);
+        }
             break;
         case PVCDirectionTop:
+        {
             prentSize = CGSizeMake(335, 400);
+        }
             break;
         case PVCDirectionBottom:
+        {
             prentSize = CGSizeMake(335, 400);
+        }
             break;
             
             
         default:
             break;
     }
+
+    
     PresentViewController * presentVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PresentViewController"];
     presentVC.view.backgroundColor = sender.backgroundColor;
     presentVC.delegate = self;
